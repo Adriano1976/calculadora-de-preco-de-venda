@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Preço de Venda</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Calculadora de Preço de Venda</h1>
+  <div class="container">
+    <label for="custo-mercadoria">Custo da Mercadoria:</label>
+    <input type="number" id="custo-mercadoria" placeholder="Informe o custo">
+    <br>
+    <label for="cv">Custos Variáveis:</label>
+    <input type="number" id="cv" placeholder="Informe as despesas variáveis">
+    <br>
+    <label for="cf">Custos Fixos:</label>
+    <input type="number" id="cf" placeholder="Informe as despesas fixos">
+    <br>
+    <label for="ml">Magem de Lucro Planejado:</label>
+    <input type="number" id="ml" placeholder="Informe a margem de lucro">
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <br>
+    <h2>Resultado:</h2>
+    <p id="preco-venda"></p>
+    <p id="margem"></p>
+    <p id="lucro-liquido"></p>
+	<p id="markup"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
